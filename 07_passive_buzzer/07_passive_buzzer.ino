@@ -1,6 +1,3 @@
-//www.elegoo.com
-//2016.12.08
-
 #include "pitches.h"
  
 // notes in the melody:
