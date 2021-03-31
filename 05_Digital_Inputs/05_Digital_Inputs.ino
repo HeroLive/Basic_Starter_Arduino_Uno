@@ -1,6 +1,3 @@
-//www.elegoo.com
-//2016.12.08
-
 int ledPin = 5;
 int buttonApin = 9;
 int buttonBpin = 8;
