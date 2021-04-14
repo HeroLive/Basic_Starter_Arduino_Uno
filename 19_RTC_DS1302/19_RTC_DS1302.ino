@@ -68,7 +68,7 @@ void loop ()
     RtcDateTime now = Rtc.GetDateTime();
 
     printDateTime(now);
-    Serial.println();
+    Serial.println(now);
 
     if (!now.IsValid())
     {
