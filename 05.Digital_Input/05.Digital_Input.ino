@@ -1,6 +1,6 @@
 int ledPin = 5;
-int buttonApin = 9;
-int buttonBpin = 8;
+int buttonApin = 2;
+int buttonBpin = 3;
 
 byte leds = 0;
 

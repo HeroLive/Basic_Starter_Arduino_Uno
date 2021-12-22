@@ -5,14 +5,8 @@ void setup()
 }
 void loop()
 {
-   //output an frequency
-   for(int i=0;i<80;i++)
-   {
     digitalWrite(buzzer,HIGH);
-    delay(1);//wait for 1ms
+    delay(2000);//wait for 2s
     digitalWrite(buzzer,LOW);
-    delay(1);//wait for 1ms
-    }
-  delay(2000);
+    delay(1000);//wait for 1s
 } 
-//

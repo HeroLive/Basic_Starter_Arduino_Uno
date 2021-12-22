@@ -7,10 +7,12 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   pinMode(pirPin, INPUT);
   digitalWrite(ledPin, LOW);
+  Serial.begin(9600);
   
 }
 
 void loop() {
   pirValue = digitalRead(pirPin);
+  Serial.println(pirValue);
   digitalWrite(ledPin, pirValue);
 }

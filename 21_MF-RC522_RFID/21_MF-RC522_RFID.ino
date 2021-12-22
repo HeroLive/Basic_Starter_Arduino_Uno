@@ -5,7 +5,7 @@
 #define SS_PIN 10
 
 byte readCard[4];
-String MasterTag = "20C3935E";  // REPLACE this Tag ID with your Tag ID!!!
+String MasterTag = "FCF7F521";  // REPLACE this Tag ID with your Tag ID!!!
 String tagID = "";
 
 // Create instances

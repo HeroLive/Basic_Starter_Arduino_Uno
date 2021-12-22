@@ -7,11 +7,13 @@ void setup()
   pinMode(tiltBallPin,INPUT);
 
   digitalWrite(ledPin,LOW);
+  Serial.begin(9600);
 } 
 
 void loop() 
 { 
   int digitalVal = digitalRead(tiltBallPin); //read pin 2
+  Serial.println(digitalVal);
   if(HIGH == digitalVal)
   {
     digitalWrite(ledPin,LOW);//turn the led off
@@ -20,4 +22,5 @@ void loop()
   {
     digitalWrite(ledPin,HIGH);//turn the led on 
   }
+  delay(100);
 }
