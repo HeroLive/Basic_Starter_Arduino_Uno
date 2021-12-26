@@ -1,4 +1,4 @@
-int tDelay = 100;
+int tDelay = 500;
 int latchPin = 11;      // (11) ST_CP [RCK] on 74HC595
 int clockPin = 9;      // (9) SH_CP [SCK] on 74HC595
 int dataPin = 12;     // (12) DS [S1] on 74HC595
@@ -29,10 +29,26 @@ void setup()
 
 void loop() 
 {
+  /*
   //Turn off all led
   leds = 0;
   updateShiftRegister();
   delay(tDelay);
+  */
+  //Turn on led i=0 or to 7
+  bitSet(leds, 0); //10000000
+  updateShiftRegister();
+  delay(tDelay);
+  /*
+  //turn on the led from 0 to 7
+  for (int i = 0; i < 8; i++)
+  {
+    leds=0;
+    bitSet(leds, i);
+    updateShiftRegister();
+    delay(tDelay);
+  }
+  
   //Create a for loop:i 0 through 7 have gradually increased
   for (int i = 0; i < 8; i++)
   {
@@ -41,4 +57,5 @@ void loop()
     updateShiftRegister();
     delay(tDelay);
   }
+  */
 }

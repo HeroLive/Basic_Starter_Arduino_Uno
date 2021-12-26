@@ -16,24 +16,25 @@ void loop() {
   // put your main code here, to run repeatedly:
   flameA0 = analogRead(pinA0);
   flameD0 = digitalRead(pinD0);
-    
+
+  /*
   //trigger on Digital D0
-  if (flameD0 == 0) {
+  if (flameD0 == 1) {
     digitalWrite(buzzer, HIGH);
     delay(2000);
   } else {
     digitalWrite(buzzer,LOW);
   }
   Serial.println(flameD0);
-  /*
+  */
   //trigger on Analog A0
-  if (flameA0 < 800) {
+  if (flameA0 < 400) {
     digitalWrite(buzzer, HIGH);
-    delay(2000);
+//    delay(2000);
   } else {
     digitalWrite(buzzer,LOW);
   }
   Serial.println(flameA0);
-  */
+
   delay(20);
 }

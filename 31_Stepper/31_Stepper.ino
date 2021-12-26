@@ -16,18 +16,18 @@ void loop() {
   digitalWrite(dirPin, HIGH);
   for (int i = 1 ; i <= 200 ; i = i + 1) {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
   }
   delay(2000);
   
   digitalWrite(dirPin, LOW);
   for (int i = 1 ; i <= 200 ; i = i + 1) {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
   }
   delay(1000);
 }

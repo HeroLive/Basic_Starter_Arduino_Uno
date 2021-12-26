@@ -15,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  directionControl();
+//  directionControl();
   delay(1000);
   speedControl();
   delay(1000);
@@ -25,7 +25,7 @@ void loop() {
 void directionControl() {
   // Set motors to maximum speed
   // For PWM maximum possible values are 0 to 255
-  analogWrite(enA, 255);
+  analogWrite(enA, 100);
 
   // Turn on motor A
   digitalWrite(in1, HIGH);
@@ -49,13 +49,13 @@ void speedControl() {
   digitalWrite(in2, HIGH);
   
   // Accelerate from zero to maximum speed
-  for (int i = 0; i < 256; i++) {
+  for (int i = 0; i < 100; i++) {
     analogWrite(enA, i);
     delay(20);
   }
   
   // Decelerate from maximum speed to zero
-  for (int i = 255; i >= 0; --i) {
+  for (int i = 100; i >= 0; --i) {
     analogWrite(enA, i);
     delay(20);
   }

@@ -19,14 +19,14 @@ void loop() {
   while (Serial.available() == 0) {
   }
   n = Serial.parseInt();
-  Serial.print(n);
+  Serial.println(n);
   x = n * 200;
   digitalWrite(dirPin, LOW);
   for (int i = 1 ; i <= x ; i = i + 1) {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(500);
+    delayMicroseconds(1000);
   }
   delay(2000);
 }

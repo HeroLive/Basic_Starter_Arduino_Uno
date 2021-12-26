@@ -25,15 +25,15 @@ void setup() {
 void loop() {
   //display time
   display.showNumberDecEx(timeDisplay, 0b01000000);
-  delay(2000);
+  delay(5000);
   //display number + segment 32oC
   display.showNumberDec(tempC, false, 2, 0);
   display.setSegments(doC, 2, 2);
-  delay(2000);
+  delay(5000);
   //display number count down
   for (NumStep = 1000; NumStep > 0; NumStep--) //Interrate NumStep
   {
     display.showNumberDec(NumStep); //Display the Variable value;
-    delay(100);  //A half second delay between steps.
+    delay(1000);  //A half second delay between steps.
   }
 }
