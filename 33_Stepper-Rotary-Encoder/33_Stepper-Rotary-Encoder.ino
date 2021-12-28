@@ -13,7 +13,7 @@ unsigned long lastButtonPress = 0;
 
 int microStep = 1; //16;
 float angleStep = 1.8;
-float stepsPerUnit = 360.0 * microStep / angleStep;
+float stepsPerUnit = 360.0 * microStep / angleStep; //200
 long position = 0;
 long target = 0;
 long speed = 120; //vong/phut rpm
