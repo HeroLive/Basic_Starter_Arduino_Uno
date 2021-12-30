@@ -33,6 +33,7 @@ void loop(){
   if(digitalValue==HIGH)      // When the Sound Sensor sends signla, via voltage present, light LED13 (L)
   {
     digitalWrite(Led13,HIGH);
+    delay(5000);
   }
   else
   {

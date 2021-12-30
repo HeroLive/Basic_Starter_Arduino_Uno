@@ -14,7 +14,7 @@ void loop()
 { 
   int digitalVal = digitalRead(tiltBallPin); //read pin 2
   Serial.println(digitalVal);
-  if(HIGH == digitalVal)
+  if(digitalVal == HIGH)
   {
     digitalWrite(ledPin,LOW);//turn the led off
   }
